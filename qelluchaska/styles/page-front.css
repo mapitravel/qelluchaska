@@ -65,12 +65,11 @@
 }
 
 #welcome .description a {
-	text-decoration: underline;
-	color: #e97b0f;
+        border-bottom: 1px solid #e1ecfa;
 }
 
 #welcome .description a:hover {
-	color: #a96833;
+        color: #a96833;
 }
 
 #welcome .button {
