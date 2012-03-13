@@ -1,6 +1,6 @@
 <?php
         /* Control de flujo para distribuir Chats equitativamente */
-        //session_start();
+        session_start();
 
         if(!isset($_SESSION['mapiOlarkUser'])) :
                 $mapiRandom = rand(0,2);
@@ -38,6 +38,7 @@
   </script>
   <!-- end olark code --> 
   <script type='text/javascript'>
+        console.log('<?php print $mapiOlarkGroup; ?>');
   	olark.configure('system.group', '<?php print $mapiOlarkGroup; ?>');
 	olark('api.box.expand');
   </script> 
