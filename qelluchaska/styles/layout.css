@@ -84,6 +84,10 @@
 	margin-left: 10px;
 }
 
+.node .content h3 {
+    
+}
+
 /* Tour Bar */
 #tour-bar {
 	float: right;
