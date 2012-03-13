@@ -1,13 +1,13 @@
 INSTRUCCIONES PARA USAR EL THEME QELLUCHASKA
 =============================================
-1. MÛdulos para deshabilitar
+1. M√≥dulos para deshabilitar
    a. overlay
    b. comment
    c. toolbar
    d. shortcut
    e. color
    
-2. MÛdulos para habilitar o descargar
+2. M√≥dulos para habilitar o descargar (Los nombres que se muestran se descargan desde http://drupal.org/project/[nombre_modulo])
 	a. admin_menu
 	b. ctools
 	c. views
@@ -17,31 +17,33 @@ INSTRUCCIONES PARA USAR EL THEME QELLUCHASKA
 	g. php
 	
 3. Agregar los Feeds
-	Con el mÛdulo Aggregator, agregar los feeds de noticias, testimonios y videos
+	Con el m√≥dulo Aggregator, agregar los feeds de noticias, testimonios y videos
 
 4. Views
-    a. Habilitar el mÛdulo views
+    a. Habilitar el m√≥dulo views
 	b. Importar las 3 vistas ya creadas en la carpeta "data"
+    Nota: Estos views, generan bloques que se mostrar√°n en el home y en el sidebar
 
 5. Habilitar el Theme
 	
 6. Bloques y Regiones
-	Las regiones y bloques deben ir de la siguiente manera, el contenido de algunos bloques est· tambiÈn en la carpeta "data", Cambiar tÌtulos de bloques de acuerdo a la conveniencia
-	
-	RegiÛn: Ayuda
+	Las regiones y bloques deben ir de la siguiente manera, el contenido de algunos bloques est√°n tambi√©n en la carpeta "data", Cambiar t√≠tulos de bloques de acuerdo a la conveniencia
+	El nombre de sistema y t√≠tulo est√° en el orden [Nombre de Sistema]/[T√≠tulo]
+
+	Regi√≥n: Ayuda
 		Ayuda del sistema
-	RegiÛn: Sidebar
+	Regi√≥n: Sidebar
 		Top Tours Sidebar
-		Facebook Recommendations (fbrec.block) [Javascript]
+		Facebook Recommendations/Tus Amigos Recomiendan (fbrec.block) [Javascript]
 		Vista: Testimonios Sidebar: Block
 	Contenido
-		Contenido de la p·gina principal
-	Pie de p·gina
+		Contenido de la p√°gina principal
+	Pie de p√°gina
 		Footer (footer.block) [PHP]
-		Google Analytics
-		Machupicchu Chat (Olark)
+		Google Analytics/Sin t√≠tulo <none>
+		Machupicchu Chat/Sin t√≠tulo <none> (Olark)
 	Welcome
-		Bienvenida (welcome.block)
+		Bienvenida/Sin t√≠tulo (welcome.block)
 	Home Izquierda
 		Top tours
 	Home Derecha
@@ -50,12 +52,12 @@ INSTRUCCIONES PARA USAR EL THEME QELLUCHASKA
 	Home Bottom
 		Vista: Noticias de Machu Picchu: Block
 	Home More
-		Suscripciones FeedBurner (feedburner.block) [Full HTML]
-		Autorizaciones renovadas (autorizaciones.block) [Full HTML]
-		Facebook LikeBox Home (fblikebox.block) [Javascript]
+		Suscripciones FeedBurner/Recibe noticias en tu correo (feedburner.block) [Full HTML]
+		Autorizaciones renovadas/Autorizaciones renovadas (autorizaciones.block) [Full HTML]
+		Facebook LikeBox Home/Estamos en Facebook (fblikebox.block) [Javascript]
 	Share Bar
-		Sharebar (sharebar.block) [PHP]
+		Sharebar/Sin t√≠tulo <none> (sharebar.block) [PHP]
 
 7. Borrar todos los otros bloques, ya no sirven
 		
-8. Nada m·s
+8. Nada m√°s

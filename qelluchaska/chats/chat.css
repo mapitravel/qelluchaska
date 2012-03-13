@@ -1,0 +1,96 @@
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font: 76%/1.4em 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	color: #3f434f;
+}
+a, .link {
+	color: #316AC5;
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: 1px dotted #999;
+}
+a:hover {
+	color: #be413b;
+}
+strong {
+	color: #444;
+}
+
+h2, .dir, h1, p {
+	margin:5px;
+}
+h1 {
+	font-size: 24px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	line-height: 1.2em;
+	color: #578301
+}
+h2 {
+	font-size: 20px;
+	font-family: "AvantGarde Bk BT", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #293950;
+	text-shadow: 1px 1px 1px #6893c1;
+}
+p.msn {
+	background:url(http://media.perunoticias.net/images/msn2.png) no-repeat;
+	font: normal 16px Arial, Helvetica, sans-serif;
+	color: #18689a;
+	margin: 0 auto;
+	width: 300px;
+	text-align: left;
+	padding: 2px 0 2px 25px;
+}
+.centro {
+	text-align: center !important;
+}
+.small {
+	font-size: 80%;
+}
+#habla_sizebutton_a {
+	display: none !important;
+}
+#hblink99 {
+	display: none !important;
+}
+strong {
+	color: #578301;
+}
+
+/* Chat Olark */
+
+#habla_conversation_div span {
+	color: #FFF !important;
+	font-size: 14px !important;
+	font-weight: bold !important;
+}
+
+#habla_conversation_div strong {
+	color: #e3f427 !important;
+	font-size: 13px !important;
+}
+
+#olrk_tab_closure_span,
+#habla_topbar_div,
+#habla_both_div,
+#habla_expanded_div {
+	background-image: url(../images/bg-olark.png) !important;
+}
+
+#habla_window_div textarea {
+	border: 3px solid #323a05 !important;
+}
+.centro {
+	text-align: center !important;
+}
+.small {
+	font-size: 80%;
+}
+/*Olark Chat*/
+#habla_panel_div {
+	margin-bottom:150px;
+}
+.olarkmails{ margin-top:300px; text-align:center;}

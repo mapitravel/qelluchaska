@@ -296,6 +296,10 @@
 	margin-left: 9px;
 }
 
+#sharebar-links .pi {
+	margin-left: 12px;
+}
+
 #sharebar-links .hide:hover img,
 #sharebar-show .hide:hover img {
 	-webkit-transform: rotate(-45deg);

@@ -113,13 +113,13 @@
           </ul>
         </div>
         
-        <?php if(isset($field_langen['und']) || isset($field_langbr['und'])) : ?>
+        <?php if(isset($field_en['und']) || isset($field_br['und'])) : ?>
         <div class="bar-langs">
           <h5>Disponible tambi&eacute;n en:</h5>
           <!-- $field_langxx se cambia según el campo lenguaje del nodo, o el idioma del sitio -->
           <ul>
-            <li><a href="<?php print $field_langen['und'][0]['value'];?>"><img class="lang-en" src="http://media.perunoticias.net/images/iconos/flag-lang-en.png" /> English</a></li>
-            <li><a href="<?php print $field_langbr['und'][0]['value'];?>"><img class="lang-br" src="http://media.perunoticias.net/images/iconos/flag-lang-br.png" /> Portugu&ecirc;s</a></li>
+            <li><a href="<?php print $field_en['und'][0]['value'];?>"><img class="lang-en" src="http://media.perunoticias.net/images/iconos/flag-lang-en.png" /> English</a></li>
+            <li><a href="<?php print $field_br['und'][0]['value'];?>"><img class="lang-br" src="http://media.perunoticias.net/images/iconos/flag-lang-br.png" /> Portugu&ecirc;s</a></li>
           </ul>
         </div>
         <?php endif; ?>

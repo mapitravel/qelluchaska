@@ -32,7 +32,7 @@ base theme  = zen
 ; useful feature. See the excellent Drupal 7 Theme Guide at
 ; http://drupal.org/node/263967 for more details.
 
-; Propio de ITegracion
+; Propio de Qelluchaska
 stylesheets[screen][]        = framework/reset.css
 stylesheets[screen][]        = framework/text.css
 stylesheets[screen][]        = framework/960.css
@@ -73,7 +73,6 @@ stylesheets[print][]      = css/print.css
 ; Optionally add some JavaScripts to your theme.
 
 ;scripts[] = js/script.js
-;scripts[] = scripts/jquery.lazyload.js
 scripts[] = scripts/user.script.js
 
 
