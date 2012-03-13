@@ -1,5 +1,16 @@
 <?php
-	$ogroup = isset($_GET['ogroup']) ? htmlentities(addslashes(trim($_GET['ogroup']))) : 'fa877e0fce7c0ab847e20938e478df5b';
+        /* Control de flujo para distribuir Chats equitativamente */
+        //session_start();
+
+        if(!isset($_SESSION['mapiOlarkUser'])) :
+                $mapiRandom = rand(0,2);
+                $mapiOlarkGroups = array("fa877e0fce7c0ab847e20938e478df5b", "e69b6e798098b3a2ae909116555828fb", "eae526c5b13534c7a3a63c62ccfc1ea3");
+                $mapiOlarkGroup = $mapiOlarkGroups[$mapiRandom];
+                session_regenerate_id();
+                $_SESSION['mapiOlarkUser'] = $mapiOlarkGroup;
+        else :
+                $mapiOlarkGroup = $_SESSION['mapiOlarkUser'];
+        endif;
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
