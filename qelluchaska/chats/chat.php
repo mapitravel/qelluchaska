@@ -38,7 +38,7 @@
   </script>
   <!-- end olark code --> 
   <script type='text/javascript'>
-  	olark.configure('system.group', '<?php print $ogroup; ?>');
+  	olark.configure('system.group', '<?php print $mapiOlarkGroup; ?>');
 	olark('api.box.expand');
   </script> 
 </div>
