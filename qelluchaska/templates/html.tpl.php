@@ -72,27 +72,7 @@
 <head profile="<?php print $grddl_profile; ?>">
 <?php print $head; ?>
 <title><?php print $head_title; ?></title>
-<!-- dJ4R2WrHDXZbQxny-qfxk6A9xfA -->
 <?php print $styles; ?><?php print $scripts; ?>
-<?php 
-  	/* 
-		<og>
-  		Open Graphs: General
-		Estos valores deben ser cambiados según el sitio al que se suba el theme
-		
-	*/
-  	if($is_front) : 
-  ?>
-<meta property="og:url" content="http://www.machupicchu.biz/" />
-<meta property="og:title" content="Tours a Machu Picchu Per&uacute; - Todo sobre Machupicchu en Cusco - Agencia de Viajes y Turismo Machu Pichu Travel" />
-<meta property="og:site_name" content="Tour a Machu Picchu Per&uacute;" />
-<meta property="og:image" content="http://media.perunoticias.net/images/logo.jpg" />
-<?php
-  	endif;
-	/*
-		</og>
-	*/
-  ?>
 <meta property="fb:app_id" content="250052145006133" />
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <script type="text/javascript">
@@ -103,28 +83,6 @@
     po.src = 'https://apis.google.com/js/plusone.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
   })();
-</script>
-<script type="text/javascript">
-(function() {
-    window.PinIt = window.PinIt || { loaded:false };
-    if (window.PinIt.loaded) return;
-    window.PinIt.loaded = true;
-    function async_load(){
-        var s = document.createElement("script");
-        s.type = "text/javascript";
-        s.async = true;
-        if (window.location.protocol == "https:")
-            s.src = "https://assets.pinterest.com/js/pinit.js";
-        else
-            s.src = "http://assets.pinterest.com/js/pinit.js";
-        var x = document.getElementsByTagName("script")[0];
-        x.parentNode.insertBefore(s, x);
-    }
-    if (window.attachEvent)
-        window.attachEvent("onload", async_load);
-    else
-        window.addEventListener("load", async_load, false);
-})();
 </script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

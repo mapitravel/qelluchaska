@@ -152,5 +152,19 @@ if(drupal_is_front_page()) {
 		'preprocess' => FALSE
 	);
   drupal_add_css(drupal_get_path('theme', 'qelluchaska') . "/styles/page-front.css", $options);
+  
+  $og_attributes = array('og:url', 'og:title', 'og:image', 'og:description');
+  
+  foreach ($og_attributes as $k => $og_attribute) {
+    $element = array(
+      '#tag' => 'meta',
+      '#weight' => ($k + 10),
+      '#attributes' => array(
+        'property' => $og_attribute,
+        'content' => theme_get_setting($og_attribute),
+      ),
+    );
+    drupal_add_html_head($element, "opengraph_meta_$og_attribute");
+  }
 }
 

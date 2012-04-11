@@ -97,7 +97,7 @@
       <div id="tour-bar">
       	<div class="bar-reserva">
         	<h5>&iquest;Deseas reservar?</h5>
-            <a href="/sites/all/themes/mapi2012/chats/chat.php" class="button action live-chat">&iexcl;Chatea ahora!</a>
+            <a href="/sites/all/themes/qelluchaska/chats/chat.php" class="button action live-chat">&iexcl;Chatea ahora!</a>
             <a href="http://media.perunoticias.net/html/skype.html" class="button no-action live-skype">&iexcl;Llámanos ahora!</a>
         </div>
         <div class="bar-social">
