@@ -164,7 +164,7 @@ if(drupal_is_front_page()) {
         'content' => theme_get_setting($og_attribute),
       ),
     );
-    drupal_add_html_head($element, "opengraph_meta_$og_attribute");
+    drupal_add_html_head($element, "qelluchaska_meta_$og_attribute");
   }
 }
 
