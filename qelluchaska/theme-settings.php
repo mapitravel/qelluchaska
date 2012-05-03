@@ -49,6 +49,12 @@ function qelluchaska_form_system_theme_settings_alter(&$form, &$form_state)  {
     '#title' => t('OpenGraph Description'),
     '#default_value' => theme_get_setting('og:description'),
   );
+  $form['og']['fb:app_id'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Facebook AppID'),
+    '#default_value' => theme_get_setting('fb:app_id'),
+    '#description' => t('You can found this on ') . 'http://developers.facebook.com/apps',
+  );
 
   // Remove some of the base theme's settings.
   unset($form['themedev']['zen_layout']); // We don't need to select the layout stylesheet.

@@ -73,10 +73,9 @@
 <?php print $head; ?>
 <title><?php print $head_title; ?></title>
 <?php print $styles; ?><?php print $scripts; ?>
-<meta property="fb:app_id" content="250052145006133" />
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <script type="text/javascript">
-  window.___gcfg = {lang: 'es-419'};
+  window.___gcfg = {lang: '<?php print $GLOBALS['gplang']; ?>'};
 
   (function() {
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -89,13 +88,13 @@
 <div id="fb-root"></div>
 <script>
     window.fbAsyncInit = function() {
-      FB.init({appId: '250052145006133', status: true, cookie: true,
+      FB.init({appId: '<?php print theme_get_setting('fb:app_id'); ?>', status: true, cookie: true,
                xfbml: true});
     };
     (function() {
       var e = document.createElement('script'); e.async = true;
       e.src = document.location.protocol +
-        '//connect.facebook.net/es_LA/all.js';
+        '//connect.facebook.net/<?php print $GLOBALS['fblang']; ?>/all.js';
       document.getElementById('fb-root').appendChild(e);
     }());
   </script> 

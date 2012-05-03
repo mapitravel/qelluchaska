@@ -78,7 +78,7 @@
       <?php if ($site_slogan): ?>
       <?php print $site_slogan; ?>
       <?php endif; ?>
-      <p id="header-mail">Reserve y consulta las 24 horas: <strong>info@machupicchu.biz</strong></p>
+      <p id="header-mail"><?php print t('Ask and book tours 24/7:'); ?> <strong>info@machupicchu.biz</strong></p>
     </div>
   </div>
   <div class="clear"></div>
