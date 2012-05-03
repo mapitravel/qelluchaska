@@ -1,0 +1,91 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  qelluchaska/theme-settings.php: n/a
+#  qelluchaska/qelluchaska.info: n/a
+#  qelluchaska/templates/node--page.tpl.php: n/a
+#  qelluchaska/templates/node--tour.tpl.php: n/a
+#  qelluchaska/templates/page--front.tpl.php: n/a
+#  qelluchaska/templates/page.tpl.php: n/a
+#  qelluchaska/templates/views/views-view-fields--noticias-de-machu-picchu--block.tpl.php: n/a
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-05-03 08:49-0500\n"
+"PO-Revision-Date: 2012-05-03 08:53-0500\n"
+"Last-Translator: brau <soncco@gmail.com>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: qelluchaska/theme-settings.php:26
+msgid "Open Graph Settings"
+msgstr "Configuración de Open Graph"
+
+#: qelluchaska/theme-settings.php:33
+msgid "OpenGraph URL"
+msgstr "OpenGraph URL"
+
+#: qelluchaska/theme-settings.php:38
+msgid "OpenGraph Title and Site Name"
+msgstr "OpenGraph título y nombre del sitio"
+
+#: qelluchaska/theme-settings.php:43
+msgid "OpenGraph Image"
+msgstr "OpenGraph Imagen"
+
+#: qelluchaska/theme-settings.php:49
+msgid "OpenGraph Description"
+msgstr "OpenGraph Descripción"
+
+#: qelluchaska/theme-settings.php:54
+msgid "Facebook AppID"
+msgstr "Facebook AppID"
+
+#: qelluchaska/theme-settings.php:56
+msgid "You can found this on "
+msgstr "Lo puedes encontrar en "
+
+#: qelluchaska/qelluchaska.info:0
+msgid "Qellu Chaska"
+msgstr "Qellu Chaska"
+
+#: qelluchaska/templates/node--page.tpl.php:100
+msgid "Share:"
+msgstr "Comparte:"
+
+#: qelluchaska/templates/node--page.tpl.php:113
+#: qelluchaska/templates/node--tour.tpl.php:118
+msgid "Also available in:"
+msgstr "Disponible también en:"
+
+#: qelluchaska/templates/node--tour.tpl.php:99
+msgid "Book now!"
+msgstr "¿Deseas reservar?"
+
+#: qelluchaska/templates/node--tour.tpl.php:100
+msgid "Chat now!"
+msgstr "¡Chatea ahora!"
+
+#: qelluchaska/templates/node--tour.tpl.php:101
+msgid "Call us!"
+msgstr "¡Llámanos ahora!"
+
+#: qelluchaska/templates/node--tour.tpl.php:104
+msgid "Share this tour:"
+msgstr "Comparte el tour:"
+
+#: qelluchaska/templates/page--front.tpl.php:81
+#: qelluchaska/templates/page.tpl.php:81
+msgid "Ask and book tours 24/7:"
+msgstr "Reserve y consulte las 24 horas:"
+
+#: qelluchaska/templates/views/views-view-fields--noticias-de-machu-picchu--block.tpl.php:36
+msgid "Read more..."
+msgstr "Leer más…"
+

@@ -91,13 +91,13 @@ regions[help]           = Help
 
 regions[sidebar]  = Sidebar
 regions[content]  = Content
-regions[footer]   = Pie de página
+regions[footer]   = Footer
 
 ; Front Page Regions
 
 regions[welcome] = Welcome
-regions[homeleft] = Home Izquierda
-regions[homeright] = Home Derecha
+regions[homeleft] = Home Left
+regions[homeright] = Home Right
 regions[homebottom] = Home Bottom
 regions[homemore] = Home More
 regions[sharebar] = Share Bar
