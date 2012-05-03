@@ -104,7 +104,7 @@
           <h5><?php print t('Share this tour:') ?></h5>
           <ul>
             <li class="social">
-              <g:plusone size="medium" href="<?php print $path; ?>"></g:plusone>
+              <g:plus action="share" annotation="bubble" height="15" href="<?php print $path; ?>"></g:plus>
             </li>
             <li class="social">
               <fb:like href="<?php print $path; ?>" send="false" layout="button_count" width="100" show_faces="false"></fb:like>
