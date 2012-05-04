@@ -83,7 +83,6 @@
  
  global $base_root;
  $path = $base_root . $node_url;
- dpm(get_defined_vars());
 ?>
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
