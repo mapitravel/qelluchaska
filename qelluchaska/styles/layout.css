@@ -178,6 +178,11 @@
 	border: 3px solid #323a05 !important;
 }
 
+#habla_offline_message_span {
+  color: #FFF;
+  font-weight: bold;
+}
+
 /* Testimonios */
 .testimonio {
 	color: #444040;
