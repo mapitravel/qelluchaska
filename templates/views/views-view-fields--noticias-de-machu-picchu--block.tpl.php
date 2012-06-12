@@ -31,7 +31,7 @@
 	$link = $fields['link']->content;
 ?>
 
-<div class="noticia"> <?php print $title; ?>
+<article class="noticia"> <?php print $title; ?>
   <p class="noticia-fecha"><?php print $timestamp; ?></p>
   <p class="noticia-description"><?php print $description; ?> <a href="<?php print $link; ?>"><?php print t('Read more...'); ?></a></p>
   <ul class="noticia-social">
@@ -43,5 +43,5 @@
     </li>
     <li class="node-social"><a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php print $link; ?>" data-count="horizontal" data-via="MapiTravel4All" data-lang="<?php print $GLOBALS['twlang']; ?>" data-text="<?php print strip_tags($title); ?>">Tweet</a> </li>
   </ul>
-</div>
+</article>
 <div class="clear"></div>

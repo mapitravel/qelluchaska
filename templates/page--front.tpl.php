@@ -72,15 +72,15 @@
 ?>
 
 <div id="main">
-  <div id="header">
-    <div id="header-inner" class="container_16">
-      <h2 id="logo"><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" rel="home"><span><?php print $site_name; ?></span></a></h2>
+  <header id="header" role="banner">
+    <hgroup id="header-inner" class="container_16">
+      <h1 id="logo"><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" rel="home"><span><?php print $site_name; ?></span></a></h1>
       <?php if ($site_slogan): ?>
-      <?php print $site_slogan; ?>
+        <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
       <?php endif; ?>
       <p id="header-mail"><?php print t('Ask and book tours 24/7:'); ?> <strong>info@machupicchu.biz</strong></p>
-    </div>
-  </div>
+    </hgroup>
+  </header>
   <div class="clear"></div>
   <!-- //#header -->
   
@@ -88,7 +88,7 @@
     <div id="content" class="container_16">
       <div id="main-content" class="grid_16">
         <div id="main-content-inner">
-          <div id="content-body">
+          <div id="content-body" role="main">
             <?php if($messages || $page['help']) : ?>
             <div id="extras"> <?php print $messages; ?> <?php print render($page['help']); ?>
               <?php if ($action_links): ?>
@@ -102,11 +102,11 @@
             <div class="tabs"><?php print render($tabs); ?></div>
             <?php endif; ?>
 		<div id="welcome"><?php print render($page['welcome']); ?></div><div class="clear"></div>
-            <div class="grid_9 alpha" id="homeleft"><?php print render($page['homeleft']); ?></div>
-            <div class="grid_7 omega" id="homeright"><?php print render($page['homeright']); ?></div>
+            <section class="grid_9 alpha" id="homeleft"><?php print render($page['homeleft']); ?></section>
+            <section class="grid_7 omega" id="homeright"><?php print render($page['homeright']); ?></section>
 		<div class="clear"></div>
-            <div class="grid_11 alpha" id="homebottom"><?php print render($page['homebottom']); ?></div>
-            <div class="grid_5 omega" id="homemore"><?php print render($page['homemore']); ?></div>
+            <section class="grid_11 alpha" id="homebottom"><?php print render($page['homebottom']); ?></section>
+            <section class="grid_5 omega" id="homemore"><?php print render($page['homemore']); ?></section>
 		<div class="clear"></div>
             </div>
         </div>
@@ -119,7 +119,5 @@
   </div>
   <div class="clear"></div>
   <!-- //#main-container -->
-  <div id="footer">
-    <div id="footer-inner" class="container_16 region region-footer"> <?php print render($page['footer']); ?> </div>
-  </div>
+  <?php print render($page['footer']); ?> 
 </div>

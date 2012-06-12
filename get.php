@@ -1,4 +1,7 @@
 <?php
+$cambio = file_get_contents('http://media.perunoticias.net/html/prices/tours/cambio.html');
+die ($cambio);
+/*
 function curl_file_get_contents($url)
 {
     $ch = curl_init();
@@ -12,4 +15,5 @@ function curl_file_get_contents($url)
 }
 	$cambio=curl_file_get_contents('http://media.perunoticias.net/html/prices/tours/cambio.html');
 	die($cambio);
+*/
 ?>

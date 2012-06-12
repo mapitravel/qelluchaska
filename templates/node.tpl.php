@@ -81,13 +81,14 @@
  * @see template_process()
  */
 ?>
-
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+<article id="node-<?php print $node->nid; ?>" class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div id="node-inner"> <?php print render($title_prefix); ?>
     <?php if (!$page): ?>
+    <header>
     <?php print render($title_prefix); ?>
     <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
     <?php print render($title_suffix); ?>
+    </header>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
     <div class="content"<?php print $content_attributes; ?>>
@@ -100,5 +101,5 @@
     </div>
     <div class="meta"> <?php print render($content['links']); ?> <?php print render($content['comments']); ?> </div>
   </div>
-</div>
+</article>
 <!-- /.node --> 

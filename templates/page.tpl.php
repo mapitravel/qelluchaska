@@ -72,24 +72,24 @@
 ?>
 
 <div id="main">
-  <div id="header">
-    <div id="header-inner" class="container_16">
-      <h2 id="logo"><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" rel="home"><span><?php print $site_name; ?></span></a></h2>
+  <header id="header" role="banner">
+    <hgroup id="header-inner" class="container_16">
+      <h1 id="logo"><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" rel="home"><span><?php print $site_name; ?></span></a></h1>
       <?php if ($site_slogan): ?>
-      <?php print $site_slogan; ?>
+        <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
       <?php endif; ?>
       <p id="header-mail"><?php print t('Ask and book tours 24/7:'); ?> <strong>info@machupicchu.biz</strong></p>
-    </div>
-  </div>
+    </hgroup>
+  </header>
   <div class="clear"></div>
   <!-- //#header -->
   
   <div id="main-container">
     <div id="content" class="container_16">
-      <div id="sidebar" class="grid_5">
+      <aside id="sidebar" class="grid_5">
         <div id="sidebar-inner" class="region region-sidebar"> <?php print render($page['sidebar']); ?> </div>
-      </div>
-      <div id="main-content" class="grid_11">
+      </aside>
+      <div id="main-content" class="grid_11" role="main">
         <div id="main-content-inner">
           <div id="content-header">
             <?php if ($title): ?>
@@ -125,7 +125,5 @@
   </div>
   <div class="clear"></div>
   <!-- //#main-container -->
-  <div id="footer">
-    <div id="footer-inner" class="container_16 region region-footer"> <?php print render($page['footer']); ?> </div>
-  </div>
+  <?php print render($page['footer']); ?>
 </div>

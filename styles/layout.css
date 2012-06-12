@@ -360,3 +360,15 @@
 #footer a {
 	color: #fff;
 }
+
+
+/**
+  * Zen 1.5
+  */
+  
+/* Tabs */
+ul.primary li {
+  list-style-image: none;
+}
+
+/* Tabs */

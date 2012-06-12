@@ -1,10 +1,10 @@
 var paramsChat = 'location=0,status=0,scrollbars=0,width=430,height=500';
 var paramsSkype = 'location=0,status=0,scrollbars=0,width=450,height=350';
-
-/* Function Popup Window */ 
+  
 (function($) {
-		
-	$.fn.popup = function(params, href) {
+  
+  // Popup Plugin
+  $.fn.popup = function(params, href) {
 		href = (typeof href == 'undefined') ? $(this).attr('href') : href;
 		function clickHandler(e) {
 			if (e.ctrlKey || e.shiftKey || e.metaKey)
@@ -19,70 +19,63 @@ var paramsSkype = 'location=0,status=0,scrollbars=0,width=450,height=350';
 			.bind('click', clickHandler);
 		return this;
 	}
-})(jQuery); 
-
-
-// Popup Settings
-(function($) {
 
 	var sharebarHandler = function() {
-	
-		var ventana = $(window).width();
+		ventana = $(window).width();
 		// co es el tamanio de el espacio a cada lado del centro y se le resta 83 por el tamanio del sharebar
 		// 83 es el tamanio de Share bar y 960 es el tamanio de #main
-		var co = parseInt((ventana-960)/2) - 83;
+		co = parseInt((ventana-960)/2) - 91;
 		// Posicionamos el Sharebar
 		$('#sharebar').css('left', co);
 	}
 
-	$(document).ready(function() { 
-	
-		//Tour prices tables
-		$.ajax({
-			url: "/sites/all/themes/qelluchaska/get.php",
-			type:"GET",
-			success:  function(cambio){
-				$(".fprice").each(function(){
-					$(this).css("font-size","11px");
-					price=0;
-					price=parseInt($(this).text());
-					//opera y reemplaza precios
-					$(this).text("USD "+price).next("td").text("S/."+parseInt(price*cambio)).css("font-size","11px"); 
-				});
-			}
-		})	
-			
-		// Popup
-		$('.live-chat').popup(paramsChat);
-		$('.live-skype').popup(paramsSkype);
-	
-		
-		// Hide Blocks
-		$('#welcome .hide').click(function() {
-			$('#welcome').hide('slow');
-			return false;
-		}) ;
-		
-		$('#sharebar-links .hide').click(function() {
-			$('#sharebar-links').hide('slow');
-			$('#sharebar-show').show('slow');
-			return false;
-		}) ;
-		
-		$('#sharebar-show .hide').click(function() {
-			$('#sharebar-show').hide('slow');
-			$('#sharebar-links').show('slow');
-			return false;
-		}) ;
+	Drupal.behaviors.qelluchaska = {
+    attach: function (context) {
+      //Tour prices tables
+      $.ajax({
+        url: "/sites/all/themes/qelluchaska/get.php",
+        type:"GET",
+        success:  function(cambio){
+          $(".fprice", context).each(function(){
+            $(this).css("font-size","11px");
+            price=0;
+            price=parseInt($(this).text());
+            // Opera y reemplaza precios
+            $(this).text("USD "+price).next("td").text("S/."+parseInt(price*cambio)).css("font-size","11px"); 
+          });
+        }
+      })	
 
-		sharebarHandler();
+      // Popup
+      $('.live-chat', context).popup(paramsChat);
+      $('.live-skype', context).popup(paramsSkype);
 
-	});
+
+      // Hide Blocks
+      $('#welcome .hide', context).click(function() {
+        $('#welcome', context).hide('slow');
+        return false;
+      }) ;
+
+      $('#sharebar-links .hide', context).click(function() {
+        $('#sharebar-links', context).hide('slow');
+        $('#sharebar-show', context).show('slow');
+        return false;
+      }) ;
+
+      $('#sharebar-show .hide', context).click(function() {
+        $('#sharebar-show', context).hide('slow');
+        $('#sharebar-links', context).show('slow');
+        return false;
+      }) ;
+
+      sharebarHandler();
+
+    }
+  }
 
 	$(window).resize(function() {
-          sharebarHandler();
-        });
-
-
+    sharebarHandler();
+  });
 
 })(jQuery); 

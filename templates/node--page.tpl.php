@@ -84,17 +84,18 @@
  global $base_root;
  $path = $base_root . $node_url;
 ?>
-
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+<article id="node-<?php print $node->nid; ?>" class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div id="node-inner"> <?php print render($title_prefix); ?>
     <?php if (!$page): ?>
     <?php print render($title_prefix); ?>
+    <header>
     <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+    </header>
     <?php print render($title_suffix); ?>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
     <div class="content"<?php print $content_attributes; ?>>
-      <div id="tour-bar">
+      <section id="tour-bar">
         <div class="bar-social">
           <h5><?php print t('Share:'); ?></h5>
           <ul>
@@ -123,7 +124,7 @@
           </ul>
         </div>
         <?php endif; ?>
-      </div>
+      </section>
       <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
@@ -134,5 +135,5 @@
     <div class="meta"> <?php print render($content['links']); ?> <?php print render($content['comments']); ?> </div>
     <div class="fb-comments" data-href="<?php print $path; ?>" data-num-posts="5" data-width="635"></div>
   </div>
-</div>
+</article>
 <!-- /.node --> 

@@ -35,8 +35,9 @@ base theme  = zen
 ; Propio de Qelluchaska
 stylesheets[screen][]        = framework/reset.css
 stylesheets[screen][]        = framework/text.css
-stylesheets[screen][]        = framework/960.css
+;stylesheets[screen][]        = framework/960.css
 stylesheets[screen][]        = styles/layout.css
+stylesheets[all][]           = styles/mediaqueries.css
 
 ;stylesheets[all][]        = css/html-reset.css
 stylesheets[all][]        = css/wireframes.css

@@ -1,0 +1,81 @@
+@media screen and (max-width: 960px) {
+  #contact-bar {
+    display: none;
+  }
+  #main {
+    padding-top: 0px;
+  }
+  
+  #sharebar {
+    display: none;
+  }
+  
+  .block {
+    padding: 0 10px !important;
+  }
+  
+  .testimonio-video iframe {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #header-inner {
+    background-image: url('../images/bg-header-es-768.jpg') !important;
+  }
+  
+  #welcome h1 {
+    padding-top: 5px;
+    font-size: 20px !important;
+  }
+  .region-homeleft ul li,
+  .region-homeright ul li,
+  .region-sidebar ul li {
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0;
+    border-bottom: 1px solid #cdcaca;
+    padding-left: 10px;
+  }
+  
+  #sidebar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #header-inner {
+    background-image: url('../images/bg-header-es-640.jpg') !important;
+  }
+  
+  #header-mail {
+    width: 300px !important;
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #header-inner {
+    background-image: url('../images/bg-header-es-320.jpg') !important;
+    height: 148px !important;
+  }
+  
+  #header-mail {
+    width: 100% !important;
+    font-size: 11px !important;
+  }
+  
+  #welcome h1 {
+    font-size: 14px !important;
+    font-weight: bold;
+  }
+  
+  body {
+    font: 11px/1.5em Arial, Helvetica, sans-serif !important;
+  }
+  
+  .node-social {
+    width: 100% !important;
+  }
+  
+}

@@ -9,6 +9,11 @@
  * - $language: (object) The language the site is being displayed in.
  *   $language->language contains its textual representation. $language->dir
  *   contains the language direction. It will either be 'ltr' or 'rtl'.
+ * - $html_attributes: String of attributes for the html element. It can be
+ *   manipulated through the variable $html_attributes_array from preprocess
+ *   functions.
+ * - $html_attributes_array: Array of html attribute values. It is flattened
+ *   into a string within the variable $html_attributes.
  * - $rdf_namespaces: All the RDF namespace prefixes used in the HTML document.
  * - $grddl_profile: A GRDDL profile allowing agents to extract the RDF data.
  * - $head_title: A modified version of the page title, for use in the TITLE
@@ -22,11 +27,15 @@
  *   - slogan: The slogan of the site, if any, and if there is no title.
  * - $head: Markup for the HEAD section (including meta tags, keyword tags, and
  *   so on).
+ * - $default_mobile_metatags: TRUE if default mobile metatags for responsive
+ *   design should be displayed.
  * - $styles: Style tags necessary to import all CSS files for the page.
  * - $scripts: Script tags necessary to load the JavaScript files and settings
  *   for the page.
- * - $jump_link_target: The HTML ID of the element that the "Jump to Navigation"
- *   link should jump to. Defaults to "main-menu".
+ * - $skip_link_anchor: The HTML ID of the element that the "skip link" should
+ *   link to. Defaults to "main-menu".
+ * - $skip_link_text: The text for the "skip link". Defaults to "Jump to
+ *   Navigation".
  * - $page_top: Initial markup from any modules that have altered the
  *   page. This variable should always be output first, before all other dynamic
  *   content.
@@ -59,22 +68,48 @@
  * @see zen_preprocess_html()
  * @see template_process()
  */
-
 	global $base_root;
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
-  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" 
-		xml:lang="<?php print $language->language; ?>" 
-        version="XHTML+RDFa 1.0" 
-        dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>
-        xmlns:og="http://ogp.me/ns#">
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7" <?php print $html_attributes; ?>><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7" <?php print $html_attributes; ?>><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8" <?php print $html_attributes; ?>><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" <?php print $html_attributes; ?>><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html <?php print $html_attributes . $rdf_namespaces; ?>><!--<![endif]-->
 <head profile="<?php print $grddl_profile; ?>">
 <?php print $head; ?>
 <title><?php print $head_title; ?></title>
-<?php print $styles; ?><?php print $scripts; ?>
+<?php if ($default_mobile_metatags): ?>
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width">
+<?php endif; ?>
+<meta http-equiv="cleartype" content="on">
+<?php print $styles; ?>
+<?php print $scripts; ?>
+<script>
+var ADAPT_CONFIG = {
+  path: '/sites/all/themes/qelluchaska/framework/',
+  dynamic: true,
+  range: [
+    '0px    to 760px  = mobile.css',
+    '760px  to 980px  = 720.css',
+    '980px            = 960.css',
+  ]
+};
+</script>
+<script src="https://raw.github.com/nathansmith/adapt/master/assets/js/adapt.js"></script>
+<?php if ($add_respond_js): ?>
+  <!--[if lt IE 9]>
+  <script src="<?php print $base_path . $path_to_zen; ?>/js/html5-respond.js"></script>
+  <![endif]-->
+<?php elseif ($add_html5_shim): ?>
+  <!--[if lt IE 9]>
+  <script src="<?php print $base_path . $path_to_zen; ?>/js/html5.js"></script>
+  <![endif]-->
+<?php endif; ?>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<script type="text/javascript">
+<script>
   window.___gcfg = {lang: '<?php print $GLOBALS['gplang']; ?>'};
 
   (function() {
