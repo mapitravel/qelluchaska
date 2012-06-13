@@ -51,18 +51,47 @@
   #header-mail {
     width: 300px !important;
     font-size: 12px !important;
+    right: 0 !important;
   }
+  /* Olark */
+  #habla_beta_container_do_not_rely_on_div_classes_or_names {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #header-inner {
+    background-image: url('../images/bg-header-es-480.jpg') !important;
+    height: 160px !important;
+  }
+  
+  #header-mail {
+    width: 480px !important;
+    font-size: 11px !important;
+    right: 0 !important;
+  }
+  .noticia-social {
+    padding: 0 !important;
+    clear: both;
+  } 
+  
+  .node-social {
+    width: 50px !important;
+    float: none !important;
+  }
+  
 }
 
 @media screen and (max-width: 320px) {
   #header-inner {
     background-image: url('../images/bg-header-es-320.jpg') !important;
-    height: 148px !important;
+    height: 145px !important;
   }
   
   #header-mail {
-    width: 100% !important;
+    width: 320px !important;
     font-size: 11px !important;
+    right: 0 !important;
   }
   
   #welcome h1 {
@@ -74,8 +103,14 @@
     font: 11px/1.5em Arial, Helvetica, sans-serif !important;
   }
   
+  .noticia-social {
+    padding: 0 !important;
+    clear: both;
+  } 
+  
   .node-social {
-    width: 100% !important;
+    width: 50px !important;
+    float: none !important;
   }
   
 }

@@ -87,18 +87,6 @@
 <meta http-equiv="cleartype" content="on">
 <?php print $styles; ?>
 <?php print $scripts; ?>
-<script>
-var ADAPT_CONFIG = {
-  path: '/sites/all/themes/qelluchaska/framework/',
-  dynamic: true,
-  range: [
-    '0px    to 760px  = mobile.css',
-    '760px  to 980px  = 720.css',
-    '980px            = 960.css',
-  ]
-};
-</script>
-<script src="https://raw.github.com/nathansmith/adapt/master/assets/js/adapt.js"></script>
 <?php if ($add_respond_js): ?>
   <!--[if lt IE 9]>
   <script src="<?php print $base_path . $path_to_zen; ?>/js/html5-respond.js"></script>

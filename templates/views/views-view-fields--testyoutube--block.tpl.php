@@ -29,5 +29,5 @@ $vid = str_replace('&amp;feature=youtube_gdata_player',  '', $vid);
 
 ?>
 <div class="testimonio-video">
-	<iframe width="100%" height="239" src="http://www.youtube.com/embed/<?php print $vid; ?>?wmode=transparent" frameborder="0" allowfullscreen></iframe>
+	<iframe width="100%" height="250" src="http://www.youtube.com/embed/<?php print $vid; ?>?wmode=transparent" frameborder="0" allowfullscreen></iframe>
 </div>
