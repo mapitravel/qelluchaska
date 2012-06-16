@@ -62,6 +62,11 @@
     -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   }
+  
+  #mobile-bar p {
+    font: 11px/24px Arial, sans-serif;
+    margin-bottom: 0px !important;
+  }
 }
 
 @media screen and (max-width: 640px) {
