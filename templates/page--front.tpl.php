@@ -121,3 +121,7 @@
   <!-- //#main-container -->
   <?php print render($page['footer']); ?> 
 </div>
+<div id="mobile-bar">
+  <?php print t('Ask and book tours 24/7:'); ?> <strong>info@machupicchu.biz</strong><br>
+  <?php print strip_tags(t('Chat with us<br /> 24/7')); ?> WhatsApp: <strong>+51984674477</strong>
+</div>

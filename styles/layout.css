@@ -371,4 +371,6 @@ ul.primary li {
   list-style-image: none;
 }
 
-/* Tabs */
+#mobile-bar {
+  display: none;
+}
