@@ -85,3 +85,14 @@ msgstr "Reservar excursões e ver as 24 horas:"
 msgid "Read more..."
 msgstr "Ler mais…"
 
+#: scripts/user.script.js:0
+msgid "WhatsApp number"
+msgstr "Número de WhatsApp"
+
+#: scripts/user.script.js:0
+msgid "Message"
+msgstr "Mensaje"
+
+#: scripts/user.script.js:0
+msgid "Message sent"
+msgstr "Mensaje enviado"

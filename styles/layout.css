@@ -374,3 +374,8 @@ ul.primary li {
 #mobile-bar {
   display: none;
 }
+
+#mobile-bar a {
+  color: #FFF;
+  text-decoration: underline;
+}

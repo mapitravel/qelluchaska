@@ -58,6 +58,4 @@ function qelluchaska_form_system_theme_settings_alter(&$form, &$form_state, $for
     '#default_value' => theme_get_setting('fb:app_id'),
     '#description' => t('You can found this on ') . 'http://developers.facebook.com/apps',
   );
-  
-  
 }
