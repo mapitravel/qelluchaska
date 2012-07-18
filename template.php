@@ -180,13 +180,14 @@ if(drupal_is_front_page()) {
   $og_attributes = array('og:url', 'og:title', 'og:image', 'og:description', 'fb:app_id');
   
   foreach ($og_attributes as $k => $og_attribute) {
-    if (!empty(theme_get_setting($og_attribute))) {
+    $val = theme_get_setting($og_attribute);
+    if (!empty($val)) {
       $element = array(
         '#tag' => 'meta',
         '#weight' => ($k + 10),
         '#attributes' => array(
           'property' => $og_attribute,
-          'content' => theme_get_setting($og_attribute),
+          'content' => $val,
         ),
       );
       drupal_add_html_head($element, "qelluchaska_meta_$og_attribute");
