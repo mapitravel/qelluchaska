@@ -74,7 +74,11 @@ var paramsSkype = 'location=0,status=0,scrollbars=0,width=450,height=350';
       // WhatsApp.
       $('#wap', context).click(function () {
         bu = $(this, context);
-        inHT = '<div id="wac"><label>'+ Drupal.t('WhatsApp number') +':</label> <input type="number" name="waid" id="waid" size="10" />';
+        inHT = '<div id="wac"><label>' + 
+          Drupal.t('CellPhone Number') +
+          ':</label> <input type="number" name="waid" id="waid" size="10" placeholder="' +
+          Drupal.t('Only numbers') + 
+          '" />';
         inHT += '<label>'+ Drupal.t('Message') +':</label> <input type="text" name="wamsg" id="wamsg" size="15" /></div>';
         but = $('<button id="wasend"></button>')
         .click(function () {

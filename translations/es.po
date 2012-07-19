@@ -58,8 +58,12 @@ msgid "Qellu Chaska"
 msgstr "Qellu Chaska"
 
 #: scripts/user.script.js:0
-msgid "WhatsApp number"
-msgstr "Número de WhatsApp"
+msgid "CellPhone number"
+msgstr "Número de móvil"
+
+#: scripts/user.script.js:0
+msgid "Only numbers"
+msgstr "Sólo números"
 
 #: scripts/user.script.js:0
 msgid "Message"

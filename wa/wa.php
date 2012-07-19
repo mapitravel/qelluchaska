@@ -5,6 +5,6 @@ $wa->Connect();
 $wa->Login();
 
 $bbcode = "Nuevo mensaje desde la web: ";
-$bbcode .= sprintf("ID: %s MSG: %s", $_GET['num'], $_GET['msg']);
+$bbcode .= sprintf("Num. Cel: %s MSG: %s", $_GET['num'], $_GET['msg']);
 $wa->Message(time() . "-1", "51984674477", $bbcode);
 ?>
