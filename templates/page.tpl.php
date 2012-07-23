@@ -127,7 +127,3 @@
   <!-- //#main-container -->
   <?php print render($page['footer']); ?>
 </div>
-<div id="mobile-bar">
-  <p><?php print t('Ask and book tours 24/7:'); ?> <strong>info@machupicchu.biz</strong></p>
-  <p><a href="#" id="wap"><img src="http://media.perunoticias.net/images/whatsapp.png" alt="WhatsApp"> <?php print strip_tags(t('Chat with us<br /> 24/7')); ?> WhatsApp: +51984674477</a></p>
-</div>
