@@ -105,3 +105,10 @@ msgstr "Reserve y consulte las 24 horas:"
 msgid "Read more..."
 msgstr "Leer más..."
 
+#
+msgid "Let Us your number and we call you!"
+msgstr "¡Déjanos tu número y te llamamos!"
+
+#
+msgid "Your Name"
+msgstr "Tu nombre"

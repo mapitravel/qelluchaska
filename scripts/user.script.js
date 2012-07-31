@@ -79,24 +79,37 @@ var paramsSkype = 'location=0,status=0,scrollbars=0,width=450,height=350';
           ':</label> <input type="number" name="waid" id="waid" size="10" placeholder="' +
           Drupal.t('Only numbers') + 
           '" />';
-        inHT += '<label>'+ Drupal.t('Message') +':</label> <input type="text" name="wamsg" id="wamsg" size="15" /></div>';
+        inHT += '<label>'+ Drupal.t('Your Name') +':</label> <input type="text" name="waname" id="waname" size="15" /></div>';
         but = $('<button id="wasend"></button>')
         .click(function () {
           $.ajax({
             url: "/sites/all/themes/qelluchaska/wa/wa.php",
             type: "GET",
-            data: { num: $('#waid').val(), msg: $('#wamsg').val() },
+            data: { num: $('#waid').val(), name: $('#waname').val() },
             success: function() {
               $('#wac').html('<p>'+ Drupal.t('Message sent') +'</p>');
               $('#wasend').remove();
             } 
           })
         })
-        .text(Drupal.t('Chat now!'));
+        .text(Drupal.t('Send'));
         bu.parent().append($(inHT));
         $('#wac').parent().append(but);
         bu.remove();
         return false;
+      });
+      
+      // Block.
+      $('#waac', context).click(function () {
+        $.ajax({
+          url: "/sites/all/themes/qelluchaska/wa/wa.php",
+          type: "GET",
+          data: { num: $('#wwaid').val(), name: $('#wwamsg').val() },
+          success: function() {
+            $('#wwac').html('<p>'+ Drupal.t('Message sent') +'</p>');
+            $('#wwasend').remove();
+          } 
+        })
       });
     }
   }

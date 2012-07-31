@@ -127,3 +127,7 @@
   <!-- //#main-container -->
   <?php print render($page['footer']); ?>
 </div>
+<div id="mobile-bar">
+  <p><?php print t('Ask and book tours 24/7:'); ?> <strong>info@machupicchu.biz</strong></p>
+  <p><a href="#" id="wap"><?php print t('Let Us your number and we call you!'); ?></a></p>
+</div>
