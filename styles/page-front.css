@@ -45,14 +45,15 @@
 }
 
 #welcome {
-	margin-bottom: 10px;
+	margin-bottom: 1px;
 	position: relative;
 }
 
 #welcome h1 {
 	color: #749536;
 	border-bottom: 1px solid #cdc8c8;
-	font-size: 30px;i
+	font-size: 30px;
+	margin-bottom: 1px;
 	font-family: 'Open Sans', Arial, sans-serif;
 }
 
@@ -62,6 +63,8 @@
 
 #welcome p {
 	font-size: 13px;
+	font-weight:900;
+	margin-bottom: 0px !important;
 }
 
 #welcome .description a {

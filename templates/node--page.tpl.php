@@ -129,7 +129,10 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
+	  $block = module_invoke('views', 'block_view', 'Similar Entries-block');
+
       print render($content);
+  	  print render($block);
     ?>
     </div>
     <div class="meta"> <?php print render($content['links']); ?> <?php print render($content['comments']); ?> </div>

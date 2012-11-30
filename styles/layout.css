@@ -379,3 +379,23 @@ ul.primary li {
   color: #FFF;
   text-decoration: underline;
 }
+.left-similar-entries-list li {
+	width:45%;
+	float:left;
+	}
+	
+fieldset {
+	border: 1px solid #BE7; /* rgb(187, 238, 119);*/
+	}
+fieldset h2{
+	background-color: rgb(248, 255, 240);
+	border: 1px solid #BE7; /* rgb(187, 238, 119);*/
+	padding-left:3px;
+	padding-top:3px;
+	padding-right:3px;
+	padding-bottom:3px;
+	text-align:center !important;
+}
+fieldset ul li{
+	margin-left:15px !important;
+	}

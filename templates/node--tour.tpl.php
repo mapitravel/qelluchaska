@@ -98,8 +98,8 @@
       <section id="tour-bar">
       	<div class="bar-reserva">
         	<h5><?php print t('Book now!'); ?></h5>
-            <a href="/sites/all/themes/qelluchaska/chats/chat.php" class="button action live-chat"><?php print t('Chat now!'); ?></a>
-            <a href="http://media.perunoticias.net/html/skype.html" class="button no-action live-skype"><?php print t('Call us!'); ?></a>
+            <a href="/chat/" class="button action live-chat"><?php print t('Chat now!'); ?></a>
+            <a href="/skype/" class="button no-action live-skype"><?php print t('Call us!'); ?></a>
         </div>
         <div class="bar-social">
           <h5><?php print t('Share this tour:') ?></h5>
